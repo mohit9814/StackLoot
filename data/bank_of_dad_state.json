@@ -1,0 +1,188 @@
+{
+  "profiles": [
+    {
+      "id": "profile-akshat-default",
+      "teenName": "Akshat",
+      "parentName": "Dad",
+      "avatarEmoji": "🚀",
+      "createdAt": "2026-09-01T05:43:35.525Z",
+      "updatedAt": "2026-09-01T06:13:22.813Z",
+      "currencyCode": "INR",
+      "simulationParams": {
+        "monthlyAllowance": 1000,
+        "deferralPercentage": 100,
+        "annualInterestRate": 30,
+        "termMonths": 6,
+        "completionBonusPercentage": 20,
+        "parentInterestMatchMultiplier": 1,
+        "initialLumpSumDeposit": 0
+      },
+      "activePlan": {
+        "planId": "plan-1788242921541",
+        "teenName": "Akshat",
+        "parentName": "Dad",
+        "startDate": "2026-06-01T00:00:00.000Z",
+        "targetTermMonths": 6,
+        "monthlyAllowance": 1000,
+        "deferralPercentage": 100,
+        "annualInterestRate": 30,
+        "completionBonusPercentage": 20,
+        "parentInterestMatchMultiplier": 1,
+        "initialLumpSumDeposit": 0,
+        "currentBalance": 4525.63125,
+        "totalPrincipalContributed": 4000,
+        "totalInterestEarned": 262.815625,
+        "totalBonusesEarned": 262.815625,
+        "status": "ACTIVE",
+        "transactions": [
+          {
+            "id": "tx-backlog-dep-1",
+            "date": "2026-06-01T00:00:00.000Z",
+            "monthIndex": 1,
+            "type": "DEPOSIT",
+            "amount": 1000,
+            "balanceAfter": 1000,
+            "notes": "Month 1 Backdated Allowance Deposit (100%)"
+          },
+          {
+            "id": "tx-backlog-int-1",
+            "date": "2026-06-01T00:00:00.000Z",
+            "monthIndex": 1,
+            "type": "INTEREST_CREDIT",
+            "amount": 24.999999999999996,
+            "balanceAfter": 1025,
+            "notes": "Month 1 Retroactive Compound Interest (30% p.a.)"
+          },
+          {
+            "id": "tx-backlog-match-1",
+            "date": "2026-06-01T00:00:00.000Z",
+            "monthIndex": 1,
+            "type": "BONUS_MATCH",
+            "amount": 24.999999999999996,
+            "balanceAfter": 1050,
+            "notes": "Month 1 Parent 100% Interest Match"
+          },
+          {
+            "id": "tx-backlog-dep-2",
+            "date": "2026-07-01T00:00:00.000Z",
+            "monthIndex": 2,
+            "type": "DEPOSIT",
+            "amount": 1000,
+            "balanceAfter": 2050,
+            "notes": "Month 2 Backdated Allowance Deposit (100%)"
+          },
+          {
+            "id": "tx-backlog-int-2",
+            "date": "2026-07-01T00:00:00.000Z",
+            "monthIndex": 2,
+            "type": "INTEREST_CREDIT",
+            "amount": 51.24999999999999,
+            "balanceAfter": 2101.25,
+            "notes": "Month 2 Retroactive Compound Interest (30% p.a.)"
+          },
+          {
+            "id": "tx-backlog-match-2",
+            "date": "2026-07-01T00:00:00.000Z",
+            "monthIndex": 2,
+            "type": "BONUS_MATCH",
+            "amount": 51.24999999999999,
+            "balanceAfter": 2152.5,
+            "notes": "Month 2 Parent 100% Interest Match"
+          },
+          {
+            "id": "tx-backlog-dep-3",
+            "date": "2026-08-01T00:00:00.000Z",
+            "monthIndex": 3,
+            "type": "DEPOSIT",
+            "amount": 1000,
+            "balanceAfter": 3152.5,
+            "notes": "Month 3 Backdated Allowance Deposit (100%)"
+          },
+          {
+            "id": "tx-backlog-int-3",
+            "date": "2026-08-01T00:00:00.000Z",
+            "monthIndex": 3,
+            "type": "INTEREST_CREDIT",
+            "amount": 78.8125,
+            "balanceAfter": 3231.3125,
+            "notes": "Month 3 Retroactive Compound Interest (30% p.a.)"
+          },
+          {
+            "id": "tx-backlog-match-3",
+            "date": "2026-08-01T00:00:00.000Z",
+            "monthIndex": 3,
+            "type": "BONUS_MATCH",
+            "amount": 78.8125,
+            "balanceAfter": 3310.125,
+            "notes": "Month 3 Parent 100% Interest Match"
+          },
+          {
+            "id": "tx-1788243202812-dep",
+            "date": "2026-09-01T06:13:22.812Z",
+            "monthIndex": 4,
+            "type": "DEPOSIT",
+            "amount": 1000,
+            "balanceAfter": 4310.125,
+            "notes": "Month 4 Deferred Allowance Deposit"
+          },
+          {
+            "id": "tx-1788243202812-int",
+            "date": "2026-09-01T06:13:22.812Z",
+            "monthIndex": 4,
+            "type": "INTEREST_CREDIT",
+            "amount": 107.753125,
+            "balanceAfter": 4417.878125,
+            "notes": "Month 4 Compounding Interest (30% p.a.)"
+          },
+          {
+            "id": "tx-1788243202812-match",
+            "date": "2026-09-01T06:13:22.812Z",
+            "monthIndex": 4,
+            "type": "BONUS_MATCH",
+            "amount": 107.753125,
+            "balanceAfter": 4525.63125,
+            "notes": "Month 4 Parent 100% Interest Match"
+          }
+        ],
+        "selectedPerk": "Agreed Family Completion Reward"
+      },
+      "goals": [
+        {
+          "id": "goal-1",
+          "title": "Electric Guitar & Amp Upgrade",
+          "targetAmount": 12000,
+          "category": "MUSIC",
+          "createdAt": "2026-09-01T05:25:27.803Z",
+          "notes": "Yamaha Pacifica + Boss Katana Mini Amp"
+        },
+        {
+          "id": "goal-2",
+          "title": "High-Performance Gaming GPU / Console",
+          "targetAmount": 25000,
+          "category": "GAMING",
+          "createdAt": "2026-09-01T05:25:27.803Z",
+          "notes": "PlayStation 5 or RTX Graphics Card for PC build"
+        },
+        {
+          "id": "goal-3",
+          "title": "Noise Cancelling Headphones",
+          "targetAmount": 8000,
+          "category": "TECH",
+          "createdAt": "2026-09-01T05:25:27.803Z",
+          "notes": "Sony WH-CH720N for study & travel focus"
+        }
+      ],
+      "gamification": {
+        "currentLevel": 1,
+        "totalXp": 50,
+        "unlockedBadgeIds": [
+          "FIRST_DEPOSIT"
+        ],
+        "streakMonths": 0
+      }
+    }
+  ],
+  "activeProfileId": "profile-akshat-default",
+  "currencyCode": "INR",
+  "lastUpdated": "2026-09-01T06:13:22.813Z"
+}
