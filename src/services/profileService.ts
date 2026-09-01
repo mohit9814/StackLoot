@@ -32,29 +32,11 @@ export const profileService = {
       const raw = localStorage.getItem(STORAGE_KEY_PROFILES);
       let parsed: UserProfile[] = raw ? JSON.parse(raw) : [];
       if (!Array.isArray(parsed) || parsed.length === 0) {
-        const defaultProfile = createDefaultProfile();
-        parsed = [defaultProfile];
-        this.saveProfiles(parsed);
+        return [createDefaultProfile()];
       }
-
-      // Resilience: If legacy storage has an active plan and no profile has an active plan, hydrate it
-      const legacyPlanRaw = localStorage.getItem('bank_of_dad_active_plan_v1');
-      if (legacyPlanRaw) {
-        try {
-          const legacyPlan = JSON.parse(legacyPlanRaw);
-          if (legacyPlan && !parsed.some((p) => p.activePlan !== null)) {
-            parsed[0].activePlan = legacyPlan;
-            this.saveProfiles(parsed);
-          }
-        } catch {
-          // ignore
-        }
-      }
-
       return parsed;
     } catch {
-      const defaultProfile = createDefaultProfile();
-      return [defaultProfile];
+      return [createDefaultProfile()];
     }
   },
 
@@ -67,7 +49,7 @@ export const profileService = {
         localStorage.setItem('bank_of_dad_active_plan_v1', JSON.stringify(current.activePlan));
       }
 
-      // Automatically persist to filesystem API
+      // Persist to filesystem API
       const persistentState: AppPersistentState = {
         profiles,
         activeProfileId: activeId,
@@ -86,9 +68,7 @@ export const profileService = {
     const stored = localStorage.getItem(STORAGE_KEY_ACTIVE_PROFILE_ID);
     if (stored) return stored;
     const profiles = this.loadProfiles();
-    const firstId = profiles[0]?.id || 'profile-akshat-default';
-    this.setActiveProfileId(firstId);
-    return firstId;
+    return profiles[0]?.id || 'profile-akshat-default';
   },
 
   setActiveProfileId(id: string): void {

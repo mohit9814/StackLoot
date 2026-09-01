@@ -5,17 +5,16 @@
       "teenName": "Akshat",
       "parentName": "Dad",
       "avatarEmoji": "🚀",
-      "createdAt": "2026-09-01T05:43:35.525Z",
-      "updatedAt": "2026-09-01T06:13:22.813Z",
+      "createdAt": "2026-09-01T06:47:05.550Z",
+      "updatedAt": "2026-09-01T06:47:05.550Z",
       "currencyCode": "INR",
       "simulationParams": {
-        "monthlyAllowance": 1000,
+        "monthlyAllowance": 2000,
         "deferralPercentage": 100,
-        "annualInterestRate": 30,
+        "annualInterestRate": 10,
         "termMonths": 6,
         "completionBonusPercentage": 20,
-        "parentInterestMatchMultiplier": 1,
-        "initialLumpSumDeposit": 0
+        "parentInterestMatchMultiplier": 1
       },
       "activePlan": {
         "planId": "plan-1788242921541",
@@ -152,7 +151,7 @@
           "title": "Electric Guitar & Amp Upgrade",
           "targetAmount": 12000,
           "category": "MUSIC",
-          "createdAt": "2026-09-01T05:25:27.803Z",
+          "createdAt": "2026-09-01T06:47:05.527Z",
           "notes": "Yamaha Pacifica + Boss Katana Mini Amp"
         },
         {
@@ -160,7 +159,7 @@
           "title": "High-Performance Gaming GPU / Console",
           "targetAmount": 25000,
           "category": "GAMING",
-          "createdAt": "2026-09-01T05:25:27.803Z",
+          "createdAt": "2026-09-01T06:47:05.527Z",
           "notes": "PlayStation 5 or RTX Graphics Card for PC build"
         },
         {
@@ -168,7 +167,7 @@
           "title": "Noise Cancelling Headphones",
           "targetAmount": 8000,
           "category": "TECH",
-          "createdAt": "2026-09-01T05:25:27.803Z",
+          "createdAt": "2026-09-01T06:47:05.527Z",
           "notes": "Sony WH-CH720N for study & travel focus"
         }
       ],
@@ -184,5 +183,5 @@
   ],
   "activeProfileId": "profile-akshat-default",
   "currencyCode": "INR",
-  "lastUpdated": "2026-09-01T06:13:22.813Z"
+  "lastUpdated": "2026-09-01T06:47:20.205Z"
 }

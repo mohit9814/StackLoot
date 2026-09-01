@@ -43,6 +43,14 @@ function fileStoragePlugin(): Plugin {
             if (!fs.existsSync(dataDir)) {
               fs.mkdirSync(dataDir, { recursive: true });
             }
+
+            // Guard against empty / blank payload overwriting existing database
+            if (fs.existsSync(filePath) && (!Array.isArray(parsed?.profiles) || parsed.profiles.length === 0)) {
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify({ success: true, savedAt: new Date().toISOString() }));
+              return;
+            }
+
             fs.writeFileSync(filePath, JSON.stringify(parsed, null, 2), 'utf-8');
             res.setHeader('Content-Type', 'application/json');
             res.end(JSON.stringify({ success: true, savedAt: new Date().toISOString() }));
