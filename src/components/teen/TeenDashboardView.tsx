@@ -178,8 +178,11 @@ export const TeenDashboardView: React.FC<TeenDashboardViewProps> = ({
                       </span>
                     </div>
                     {isPlanActiveOrComplete && (
-                      <span className="text-[11px] font-bold font-mono text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded-lg border border-amber-600/40">
-                        {simulation.snowballFactor}x Snowball
+                      <span
+                        title="Month 6 monthly interest is 6.39x Month 1 monthly interest"
+                        className="text-[11px] font-bold font-mono text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded-lg border border-amber-600/40"
+                      >
+                        {simulation.snowballFactor}x Monthly Velocity
                       </span>
                     )}
                   </div>
@@ -270,21 +273,21 @@ export const TeenDashboardView: React.FC<TeenDashboardViewProps> = ({
             <div className="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 shadow-xl flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">Snowball Velocity</span>
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">Monthly Earning Velocity</span>
                   <div className="p-2 bg-amber-500/15 text-amber-400 rounded-xl">
                     <Snowflake className="w-4 h-4 animate-spin-slow" />
                   </div>
                 </div>
                 <h4 className="text-2xl font-black text-white font-mono">
-                  {isPlanActiveOrComplete ? `${simulation.snowballFactor}x Acceleration` : 'Up to 6x Acceleration'}
+                  {isPlanActiveOrComplete ? `${simulation.snowballFactor}x Monthly Growth` : 'Up to 6x Acceleration'}
                 </h4>
                 <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                  Every month your money compounds, the interest velocity accelerates. Month 6 earns nearly 6x Month 1!
+                  Your monthly interest accelerates from <strong>₹25.00/mo</strong> in Month 1 to <strong>₹159.69/mo</strong> in Month 6—meaning your money earns <strong>6.39x more interest per month</strong> by the end of the term!
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800 flex items-center gap-1.5 text-xs text-emerald-400 font-bold">
                 <Flame className="w-3.5 h-3.5" />
-                <span>{isPlanActiveOrComplete ? 'Passive Snowball Active' : 'Snowball Engine Ready'}</span>
+                <span>{isPlanActiveOrComplete ? 'Compounding Snowball In Action' : 'Snowball Engine Ready'}</span>
               </div>
             </div>
 
